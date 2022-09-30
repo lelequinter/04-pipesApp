@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pipesApp';
 
-  nombre: string = 'Leyder'
+  nombre: string = 'leYdEr'
   valor: number = 12123123
   obj = {
     nombre: 'fern'
