@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+//NgPrime
+import { ButtonModule } from 'primeng/button';
+//Componentes
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -10,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    CommonModule
+    CommonModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
