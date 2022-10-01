@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-//NgPrime
-import { ButtonModule } from 'primeng/button';
-import { CardModule } from 'primeng/card';
+
 //Componentes
 import { AppComponent } from './app.component';
+
+//Mis Modulos
+import { PrimeNgModule } from "./prime-ng/prime-ng.module";
 
 @NgModule({
   declarations: [
@@ -14,8 +15,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     CommonModule,
-    ButtonModule,
-    CardModule
+    PrimeNgModule
   ],
   providers: [],
   bootstrap: [AppComponent]
