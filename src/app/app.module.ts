@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 //Mis Modulos
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { VentasModule } from './ventas/ventas.module';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,9 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRouterModule,
     CommonModule,
+    RouterModule,
     SharedModule,
-    RouterModule
+    VentasModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
