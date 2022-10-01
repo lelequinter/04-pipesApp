@@ -11,6 +11,9 @@ import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { VentasModule } from './ventas/ventas.module';
 
+//Animaciones
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 //Cambiar el local de la App
 import localeEsCO from "@angular/common/locales/es-CO";
 import localeEsJA from "@angular/common/locales/ja";
@@ -26,6 +29,7 @@ registerLocaleData(localeEsJA);
   imports: [
     BrowserModule,
     AppRouterModule,
+    BrowserAnimationsModule,
     CommonModule,
     RouterModule,
     SharedModule,
