@@ -16,25 +16,33 @@
       class="mr-1 p-button-warning"
       (click)="toggleMayus()"
     ></button>
-    <button pButton icon="pi pi-sort" label="Por Nombre" class="mr-1"></button>
+    <button
+      pButton
+      icon="pi pi-sort"
+      label="Por Nombre"
+      class="mr-1"
+      (click)="cambiarOrden('nombre')"
+    ></button>
     <button
       pButton
       icon="pi pi-sort"
       label="Vuela"
       class="mr-1 p-button-danger"
+      (click)="cambiarOrden('vuela')"
     ></button>
     <button
       pButton
       icon="pi pi-sort"
       label="Por Color"
       class="mr-1 p-button-help"
+      (click)="cambiarOrden('color')"
     ></button>
   </div>
 </p-toolbar>
 
 <div class="grid mt-2">
   <div class="col">
-    <p-table [value]="heroes | ordenar" responsiveLayout="scroll">
+    <p-table [value]="heroes | ordenar: ordenarPor" responsiveLayout="scroll">
       <ng-template pTemplate="header">
         <tr>
           <th>Nombre</th>
